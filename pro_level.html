@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro level</title>
+</head>
+<body>
+    <header>Hello Mumbai</header>
+    <main>
+        <!--unordered list is represented by <ul> and the list elements are represented by <li> which stands for list item-->
+        <ul>
+            <li>Apple</li>
+            <ul>
+               <li>color of apple:red</li>
+               <li>it is mostly available in winters</li>
+            </ul>
+            <li>Banana</li>
+            <ul>
+                <li>the color of mango:yellow</li>
+                <li>it is mostly available in summers</li>
+                <li>it is of many variety</li>
+            </ul>
+            <li>Lichti</li>
+            <ul>
+                <li>the color of litchi:red</li>
+                <li>it is sweet in taste</li>
+            </ul>
+        </ul>
+        <!-- ordered list = in this our data will be represented in the form of numbered bullet points -->
+        <ol>
+            <li>Apple</li>
+            <ol>
+               <li>color of apple:red</li>
+               <li>it is mostly available in winters</li>
+            </ol>
+            <li>Banana</li>
+            <ol>
+                <li>the color of mango:yellow</li>
+                <li>it is mostly available in summers</li>
+                <li>it is of many variety</li>
+            </ol>
+            <li>Lichti</li>
+            <ol>
+                <li>the color of litchi:red</li>
+                <li>it is sweet in taste</li>
+            </ol>
+        </ol>
+        <!--creating tables in html using table header. In this we have mainly three types of tags. Like tr tag for creating table row td tag for filling in the table data and th tag for adding a table header-->
+        <table>
+            <caption><b>Student Table</b></caption>
+            <thead>      
+             <tr>
+                <th colspan="3">
+                    INFORMATION</th>
+            </tr>
+        </thead>     
+        <tbody>
+            <tr>
+              <td> 1</td>
+              <td> Srianha</td>
+              <td> 2317169</td>
+            </tr>
+
+            <tr>
+                <td> 2</td>
+                <td> Pahal</td>
+                <td> 231</td>
+              </tr>
+
+              <tr>
+                <td> 3</td>
+                <td> gadhi</td>
+                <td> 23</td>
+              </tr>
+            </tbody>
+        </table>
+        <!--forms are used to collect data from the user.Actions in forms are used to define what action needs to be performed when a form is submitted.-->
+       <h3>REGISTRATION FORM</h3>
+        <form action="/action.php">
+        <!--this line above states that all the details which is being entered in the form will be going to a php(backend server)-->
+        <!-- form element are the type of texts which are to be entered in the form-->
+         <h3>Enter the information required</h3>
+         <input type="text" placeholder="Enter Username"><br>
+         <input type="password" placeholder="Enter password"><br>
+         <!--radio buttons are the feature where we have to choose one option-->
+         <!--using a label for them will make it as clicking on the text on that option will also select that option and you won't have to specifically drag your cursor to the checkbox-->
+        <h3>Select your gender</h3>
+         <label for="101">
+            <input type="radio" value="MALE" name="gender" id="101">MALE
+        </label><br>
+         <label for="102">
+            <input type="radio" value="FEMALE" name="gender" id="102">FEMALE
+         </label><br>
+         <label for="103">
+            <input type="radio" value="TRANSGENDER" name="gender" id="103">TRANSGENDER
+         </label><br>
+         <label for="104">
+            <input type="radio" value="PREFER NOT TO SAY" name="gender" id="104">PREFER NOT TO SAY
+         </label><br>
+         <!--using checkboxes when we have to select multiple options-->
+         <h3>Select your favorite subjects</h3>
+         <label type="math">
+            <input type="checkbox" value="math" name="subject" id="101">Mathematics
+         </label><br>
+         <label type="physics">
+            <input type="checkbox" value="physics" name="subject" id="102">Physics
+         </label><br/>
+         <label type="commerce">
+            <input type="checkbox" value="commerce" name="subject" id="103">Commerce
+         </label><br/>
+         <label type="chem">
+            <input type="checkbox" value="chem" name="subject" id="104">Chemistry
+         </label> <br/>
+         <label type="bio">
+            <input type="checkbox" value="bio" name="subject" id="105">Biology
+         </label><br><BR>
+            <h3>Select your city</h3>
+            <select name="city" id="city">
+              <option value="Delhi">Delhi</option>
+              <option value="Bangalore">Bangalore</option>
+              <option value="Pune">Pune</option>
+              <option value="Lucknow">Lucknow</option>
+              <option value="Mumbai">Mumbai</option>    
+            </select><br><br><br>
+         <!-- using textarea tag to give certain space to user on site to give their feedback or stuff-->
+          <textarea name="feedback" id="101" placeholder="please give your valuable feedback here" row="5"></textarea><br><br>
+
+          <input type="submit" id="submit">
+           </form><BR>
+           <!-- iframe tag is used to display website inside a website-->
+
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/xkPBN4ejgoE?si=ivO7opQLM3acnuLS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+
+           <video src="video/Story by HTML5 UP - Brave 2024-07-25 15-20-37.mp4" controls>My very first portfolio</video><br>
+           <!--what happens is that when we use the video tag our video is not playable on our website, so to make it playable we write controls-->
+    </main>
+</body>
+</html>
